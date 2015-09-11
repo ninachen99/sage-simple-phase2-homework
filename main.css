@@ -1,0 +1,412 @@
+@import url(https://fonts.googleapis.com/css?family=Teko:300,400);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+* {
+	box-sizing: border-box;
+}
+
+/** { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* global */
+
+body {
+	font-family: 'Teko', sans-serif; 'Titillium Web';
+	font-size: 16px; 
+	margin: 0 auto;
+	padding: 0;
+	vertical-align: middle;
+}
+
+
+
+h1 {
+	font-family: 'Teko', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 5em;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+h2, h3 {
+	font-family: 'Teko', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	
+}
+
+h2 {
+	font-size: 2em;
+	letter-spacing: 1.5px;
+}
+
+h3 {
+	font-size: 1.875em;
+	letter-spacing: 1px;
+}
+
+
+ul li.homenav a {
+	font-size: 1em;
+	font-family:'Titillium Web', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+ul li.social a {
+	font-family: 'Teko', sans-serif;
+	font-weight: 300;
+	font-size: 1.875em;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
+
+p.subtitle {
+	font-size: 1.375em;
+	line-height: 1em;
+	color: #d5cdc9;
+	margin-top: 4%;
+	margin-bottom: 6%;
+	vertical-align: middle;	
+}
+
+p.intro {
+	font-size: 0.7em;
+	color: #7c7c7c;
+	text-transform: capitalize;
+	margin-top: -2%;
+	margin-left: 2%;
+	line-height: 1.3;
+}
+
+
+p.actions, p.joinus {
+	font-size: 1em;
+}
+
+p.actions {
+	color: #ffffff;
+}
+p.joinus {
+     color: #adadad;
+}
+
+
+/* navigation */
+
+
+header.container {
+	width: 100%;
+	margin: 0 auto;
+	height: 74px;
+}
+
+.logo {
+	float: left;
+	margin-left: 20%;
+	height: 74px;
+}
+
+a#home {
+	color: #f63c3c;
+}
+/* active navigation bar home in red*/
+#home:after {
+    content: '';
+    width: 40px;
+	height: 5px;
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    border-width: 0 0 5px;
+    border-style: solid;
+}
+
+nav.navbar {
+	float: right;
+	margin-right: 5em;
+	padding-top: 29px;
+	padding-bottom: 29px;
+	position: relative;
+}
+
+li.homenav {
+	display: inline;
+	text-align: center;
+	margin-left: 1em;
+	list-style: none;
+}
+
+a.homenav {
+	color: #7f7f7f;
+	font-size: 1em;
+	font-weight: 400;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* hero */
+
+section.hero {
+	background-image: url(img/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	margin-top: -0.3em;
+	
+}
+
+h1 {
+	margin-top: 2%;
+	font-size: 4em;
+	font-weight: 300;
+	color: #fff;
+	letter-spacing: 0.16em;
+}
+
+li.active {
+	text-align: center;
+	padding: 9% 10% 8% 14%; 
+}
+
+p.subtitle {
+	margin-bottom: 10%;
+}
+
+.herobutton, .button1 {
+	background-color: #ffffff;
+	padding: 1.2em 4.4em;
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 0.2em;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+/* pagination - hero */
+
+nav.pagination {
+	/*margin: 0 auto;margin-bottom: 2%;	this measure works well on firefox*/
+	margin-top: 5%;
+	margin-bottom: 3%;	
+	margin-left: 45%;
+	list-style: none;
+}
+
+.pager.active {
+	background-color: #fff;
+}
+
+li.pager {
+	width: 40px;
+	height: 5px;
+	margin: 2px 2px 2px 0;
+	display:inline-block;
+    margin: 2px 2px 2px 2px;
+    padding:2px 2px 2px 2px;
+    
+	list-style: none;
+	background-color: #63534d;
+}
+
+/* my project, with articles float left*/
+
+
+div.product {
+	text-align: center;
+	margin-top: -20px;
+}
+
+h2.projecttitle {
+	margin-top: 1em; 
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+h3 {
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+}
+
+/* my project 4 image containter */
+ section.containermain {
+	max-width: 96%; 
+	margin-left: 1%;
+}
+
+/* my project 4 image float*/
+
+article.slide {
+	float: left;
+	max-width: 48%;
+	margin-left: 2%;
+	margin-bottom: 4%;
+	overflow: hidden;
+	text-align: center;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+
+/*.containermain:after { 
+   content: "";
+   display: block; 
+   clear: both;
+} optional code for reference. 
+
+/* show more project, bg red divider */
+
+div.readmore  {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 5%;
+	margin-top: 3%;
+	margin-right: 3%;	
+}
+
+a.showmore {
+	color: #f63c3c;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.1em;	
+}
+
+
+
+.signup {
+	background-color: #f63c3c;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	margin-bottom: 3%; 
+	margin-top: 2%; 
+}
+
+h2.show {
+	color: #fff;
+	font-weight: 300;
+	padding-top: 40px; 
+	padding-bottom: 10px;
+}
+
+p.actions {
+	margin-bottom: 40px;
+}
+
+ a.touch {
+	padding: 10px 73px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #000;
+	font-size: 1em;
+	letter-spacing: 0.2em;
+	line-height: 1em; 
+	text-transform: uppercase;	
+}
+
+/* social media */
+
+div.socialintro{
+	position: relative; 
+	margin-left: 15%;
+	margin-top: 7%;
+}
+
+aside.connect {
+	background-color: #fafafa;
+	margin-top: -100px;
+	height: 300px; 	
+}
+
+h2.keeptouch {
+	padding-top: 25px; 
+}
+.social i {
+	color: #fff;
+	font-size: 2em;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+ul.blocks {
+	margin: 3% 5.5%;
+}
+
+li.social {
+	float: left;
+	width: 160px;
+	height: 120px;
+	list-style: none;
+	margin-right: 1.5%;
+	transform: translateX(85%);
+	background-color: #30282a;
+	text-align: center;
+	padding: 1% 3%; 
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+/* footer */
+p.footer {
+	margin-top: 1%; 
+	margin-bottom: 2%;
+	margin-left: 15%;
+	font-size: 0.8em; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
